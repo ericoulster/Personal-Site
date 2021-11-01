@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Eric Oulster(.com)</title>
+<meta charset="utf-8"/>
+
+<meta name="author" content="Eric Oulster"/>
+
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"/>
+
+<style type="text/css">
+
+@font-face {
+  font-family: 'clacon2';
+  src: url('https://www.webdraft.eu/fonts/classic-console/fonts/clacon2.woff2') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('https://www.webdraft.eu/fonts/classic-console/fonts/clacon2.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+<!--
+::selection{background:black;color:white;}
+::-webkit-selection{background:black;color:white;}
+::-moz-selection{background:black;color:white;}
+body{background:black;color:rgb(74,246,38);}
+*{cursor:default;font-family:'clacon2';line-height:3.5vw;font-size:1.5vw;padding:5px;outline:0;margin:0;}
+a{color:mediumslateblue;text-decoration:none;border-bottom:1px solid aquamarine;}
+code{background:yellow;}
+.g{color:#0f0;}
+.p{color:pink;}
+/* t.js-related: */
+ins,del{text-decoration:none;}
+s{display:none;}
+kbd{font-family:inherit;}
+ 
+.t-caret{font-size:inherit;color:rgb(74,246,38); padding:3px;font-stretch: ultra-expanded;}
+@media(max-width:1200px){#t{width:300px;margin-left:0px;}}
+
+-->
+</style>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script> <!-- 3.3.1 -->
+<script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script> 
+<script type="text/javascript">
+    $(function(){
+ $('#t').t({
+  
+  delay:1.5,                   // start delay in seconds [default:0]
+  
+  speed:40,                  // typing speed (ms) [default:50]
+  speed_vary:false,          // 'human like' speed variation [default:false]
+  
+  mistype:0,                 // mistype rate: 1:N per char [default:false]
+  locale:'en',               // keyboard layout (to fit mistype); supported: 'en' (english) or 'de' (german) [default:'en']
+  
+  caret:'\u2589',            // caret content; can be html too [default:true (\u258e)]
+  blink:250,                // blink-interval in ms; if TRUE, speed*3  [default:true]
+  blink_perm:false,          // permanent blinking? if FALSE, caret blinks only on delay/pause/finish [default:false]
+  repeat:0,                  // repeat typing: if TRUE, infinite or N times [default:0]
+  tag:'span',                // wrapper tag (.t-container, .t-caret) [default:'span']
+  pause_on_click:true,       // pauses/continues typing on click/tap (elm) [default:false]
+  pause_on_tab_switch:true,  // pauses typing if window is inactive (Page Visibility API) [default:false]
+  
+  // init callback (ready-to-type)
+  init:function(elm){},        
+  // typing callback
+  typing:function(elm,chr_or_elm,left,total){},
+  // finished callback
+  fin:function(elm){}          
+ 
+ });
+});
+</script>
+</head>
+<body>
+<div id="t">Hello<ins>1.5</ins><br>
+This is the personal website of Eric Oulster.<ins>1.5</ins><br>
+Eric is a:<ins>0.72</ins><br>
+DJ & Musician<ins>0.75</ins><br>
+Science Fiction & Fantasy Author<ins>0.75</ins><br>
+&<ins>0.2</ins><br>
+Data Scientist &<del> Data Engineer</del><ins>1.2</ins>Cloud Engineer.<ins>0.4</ins>
+<br>
+Eric is accessible on the following platforms:<ins>0.5</ins><s>25</s>
+ <br>
+<a href="https://github.com/ericoulster">Github</a><ins>0.2</ins> &<ins>0.1</ins> <a href="https://www.linkedin.com/in/eric-oulster/">LinkedIn</a> for tech work,<ins>0.4</ins><br>
+<a href="https://biglink.to/gsQW">Through a meta-portal for 2011-2018 DJ work</a>,<ins>0.2</ins><br>
+& through e-mail at contact@e---o------.com (fill in the dashes with Eric's full name). <ins>0.3</ins><br>
+This site will be updated with any future links to content.<ins>0.5</ins><br><s>30</s>
+Have a great day,<ins>0.2</ins>
+<br>Eric Oulster
+
+
+
+</div>
+</body>
+</html>
